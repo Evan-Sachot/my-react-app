@@ -53,7 +53,30 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.display {
+    background: #f0f0f0;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+}
+
+.button-panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,4 +88,5 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  
 }
