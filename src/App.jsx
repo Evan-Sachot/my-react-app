@@ -2,7 +2,6 @@ import React, { useState} from 'react';
 import Form from './form.jsx';
 import List from './List.jsx';
 import Toggle from './toggle.jsx';
-import Fetch from './fetch.jsx';
 import Calc from './calc.jsx';
 import Timer from './timer.jsx';
 
@@ -24,9 +23,7 @@ const [count, setCount] = useState(0);
      <br />
     <hr />  
     <Toggle />
-    <br />
-    <hr />  
-    <Fetch />
+    
      <br />
     <hr />  
     <Calc />
