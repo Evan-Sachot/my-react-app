@@ -4,12 +4,15 @@ import List from './List.jsx';
 import Toggle from './toggle.jsx';
 import Calc from './calc.jsx';
 import Timer from './timer.jsx';
+import Number from './rdmNumber.jsx';
+import Quiz from './Quizz.jsx';
 
 function App() {
 const [count, setCount] = useState(0);
   return (
     <>
     <div className="App">
+      
       <h1>{count}</h1>
       <button onClick={() => setCount(count + 1)}>Add</button>
       <button onClick={() => setCount(count - 1)}>Remove</button>
@@ -30,7 +33,14 @@ const [count, setCount] = useState(0);
      <br />
     <hr />  
     <Timer />
+     <br />
+    <hr />
+    <Number />
+    <br />
+    <hr />
+    <Quiz />
     </>
+    
 
 );
 }
